@@ -51,17 +51,22 @@
 // Se area for maior que 10m2, o pinto cobrará uma taxa adicional de 20%
 // Sobre o valor da area
 
-const altura = 10.2;
-const largura = 4.6;
-
+const altura = 2.7;
+const largura = 2.78;
 const area = altura * largura;
-
 const valorPorMetro = 10;
-
 const valorTotal = area * valorPorMetro;
 
 if (area > 10) {
   const valorDaTaxa = valorTotal * 0.2;
-  const CalculoTotal = valorTotal + valorDaTaxa;
-  console.log(`A area da parede é: ${are} `);
+  const calculoTotal = valorTotal + valorDaTaxa;
+  console.log(`
+        A area da parede é: ${area.toFixed(2)}
+        O valor toal é: ${calculoTotal.toFixed(2)}    
+    `);
+} else {
+  console.log(`
+        A area da parede é: ${area.toFixed(2)}
+        O valor toal é: ${valorTotal.toFixed(2)}    
+    `);
 }
